@@ -39,7 +39,7 @@
     {{#each list}}
     <div class="updates_box">
         <span class="updates_block">32*32</span>
-        <div>
+        <div class="nickname_block">
             <div class="updates_list_nickname">{{nickname}}</div>
             <p class="updates_list_description">{{description}}</p>
         </div>
@@ -53,12 +53,14 @@
     {{#with expirience}}
     <h1 class="expirience_title">{{title}}</h1>
     <div class="expirience_badge">{{badge}}</div>
-    {{#each list}}
-    <div class="expirience_list">
-        <h4 class="expirience_list_name">{{name}}</h4>
-        <p class="expirience_list_details">{{details}}</p>
+    <div class="list_block">
+        {{#each list}}
+        <div class="expirience_list">
+            <h4 class="expirience_list_name">{{name}}</h4>
+            <p class="expirience_list_details">{{details}}</p>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
     {{/with}}
 </div>
 
