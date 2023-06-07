@@ -37,9 +37,13 @@
     {{#with updates}}
     <h4 class="updates_title">{{title}}</h4>
     {{#each list}}
-    <div class="updates_block"></div>
-    <div class="updates_list_nickname">{{nickname}}</div>
-    <p class="updates_list_description">{{description}}</p>
+    <div class="updates_box">
+        <span class="updates_block">32*32</span>
+        <div>
+            <div class="updates_list_nickname">{{nickname}}</div>
+            <p class="updates_list_description">{{description}}</p>
+        </div>
+    </div>
     {{/each}}
     <a href="{{url}}" class="updates_show_all">{{show_all.text}}</a>
     {{/with}}
